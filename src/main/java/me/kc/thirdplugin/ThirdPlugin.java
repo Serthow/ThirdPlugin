@@ -1,5 +1,6 @@
 package me.kc.thirdplugin;
 
+import me.kc.thirdplugin.commands.Rise;
 import me.kc.thirdplugin.events.JoinOrLeave;
 import me.kc.thirdplugin.events.OnDeath;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -18,6 +19,7 @@ public final class ThirdPlugin extends JavaPlugin implements Listener{
         getServer().getPluginManager().registerEvents(this, this);
         getServer().getPluginManager().registerEvents(new OnDeath(), this);
         getServer().getPluginManager().registerEvents(new JoinOrLeave(), this);
+        getCommand("rise").setExecutor(new Rise());
     }
 
     @EventHandler
