@@ -1,0 +1,6 @@
+name: ThirdPlugin
+version: ${project.version}
+main: me.kc.thirdplugin.ThirdPlugin
+api-version: 1.16
+authors: [kc, ethan]
+description: Plugin3
