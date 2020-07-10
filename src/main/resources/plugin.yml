@@ -4,3 +4,7 @@ main: me.kc.thirdplugin.ThirdPlugin
 api-version: 1.16
 authors: [kc, ethan]
 description: Plugin3
+commands:
+    up:
+      description: teleports player up 10 blocks.
+      usage: /<command>
