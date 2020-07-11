@@ -13,3 +13,5 @@ commands:
     setjoinmessage:
       description: Sets the join message.
       usage: /<command> <field> <string>
+    murder:
+      description: murders the target player
