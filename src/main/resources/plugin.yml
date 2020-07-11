@@ -8,4 +8,8 @@ commands:
     rise:
       description: teleports player up 10 blocks.
       usage: /<command>
-    bind: bind a command to the held object
+    bind:
+      description: bind a command to the held object
+    setjoinmessage:
+      description: Sets the join message.
+      usage: /<command> <field> <string>

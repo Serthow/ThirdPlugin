@@ -20,6 +20,8 @@ public final class ThirdPlugin extends JavaPlugin implements Listener{
         getServer().getPluginManager().registerEvents(new OnDeath(), this);
         getServer().getPluginManager().registerEvents(new JoinOrLeave(), this);
         getCommand("rise").setExecutor(new Rise());
+        getConfig().options().copyDefaults();
+        saveDefaultConfig();
     }
 
     @EventHandler

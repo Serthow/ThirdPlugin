@@ -11,9 +11,15 @@ public class Rise implements CommandExecutor{
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
             if(sender instanceof Player) {
                 Player player = (Player) sender;
-                Location destination = player.getLocation();
-                destination.add(0, 10, 0);
-                player.teleport(destination);
+                if(player.hasPermission("thirdplugin.teleport.rise")) {
+                    Location destination = player.getLocation();
+                    destination.add(0, 10, 0);
+                    player.teleport(destination);
+                    return true;
+                }
+                else{
+                    player.sendMessage("You do not have permission to use this command");
+                }
             }
 
         return false;
