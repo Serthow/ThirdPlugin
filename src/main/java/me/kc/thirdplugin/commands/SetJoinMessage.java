@@ -10,6 +10,8 @@ import org.bukkit.plugin.Plugin;
 
 public class SetJoinMessage implements CommandExecutor {
 
+
+    //this is a test comment
     Plugin main = ThirdPlugin.getPlugin(ThirdPlugin.class);
 
     @Override
